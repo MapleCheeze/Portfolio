@@ -12,16 +12,16 @@
 
 theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "air"
+minimal_mistakes_skin    : 'dark', #"sunrise", "default", "aqua", "contrast", "dirt", "neon", "mint", "plum", "air"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "My Portfolio"
+title                    : # "My Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Keshawn White"
-description              : "'Everything in the universe has a rhythm, everything dances.' - Maya Angelou"
+description              : '"Everything in the universe has a rhythm, everything dances." - Maya Angelou '
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -42,8 +42,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            :  5 (default)
+    colorscheme          :  "light" # (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Keshawn White"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Everything in the universe has a rhythm, everything dances. - Maya Angelou "
+  bio              : ' "Everything in the universe has a rhythm, everything dances." - Maya Angelou '
   location         : "United States"
  # email            : "Keshawnwhite38@gmail.com"
   links:
