@@ -12,12 +12,12 @@
 
 theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : 'dark', #"sunrise", "default", "aqua", "contrast", "dirt", "neon", "mint", "plum", "air"
+minimal_mistakes_skin    : 'dark' #"sunrise", "default", "aqua", "contrast", "dirt", "neon", "mint", "plum", "air"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : # "My Portfolio"
+title                    : "NoBoundsLLC"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Keshawn White"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Keshawn White"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ' "Everything in the universe has a rhythm, everything dances." - Maya Angelou '
+  bio              : "Security Architect & Strategic Advisor. CISSP, CISM <br> Empowering organizations to navigate complex threats with strategic clarity."
   location         : "United States"
  # email            : "Keshawnwhite38@gmail.com"
   links:
@@ -150,6 +150,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+  since: "2013"
 
 
 # Reading Files
@@ -316,20 +317,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-
-defaults:
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
-
-
-defaults:
   # _posts
   - scope:
       path: ""
@@ -338,6 +333,5 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
       share: true
       related: true
