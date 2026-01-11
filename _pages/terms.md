@@ -1,56 +1,27 @@
 ---
 permalink: /terms/
 title: "Terms and Privacy Policy"
-last_modified_at: 2017-10-20T12:42:38-04:00
+last_modified_at: 2026-01-11
 toc: true
 ---
 
 ## Privacy Policy
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
-
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+The privacy of my visitors is paramount. This policy outlines how data is handled on this site. As a security professional, I prioritize data minimization and transparency.
 
 ### Log Files
-
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
-
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
-
-All of this information is not linked to anything that is personally identifiable.
+Like most websites, this site uses log files to monitor traffic patterns. This includes IP addresses, browser types, timestamps, and referring pages. This data is used solely for site maintenance and is not linked to personally identifiable information.
 
 ### Cookies and Web Beacons
+This site uses cookies for basic functionality and analytics. 
+* **Analytics:** I use Google Analytics to understand how visitors interact with my research and portfolio.
+* **Third Parties:** If you interact with embedded content (like a YouTube video or a GitHub gist), those third parties may set cookies. I have no control over those third-party cookies.
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
+#### Google Analytics (GA4)
+Google Analytics reports website trends without identifying individual visitors. You can opt-out by using browser extensions or disabling cookies in your settings.
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+## Terms of Use
+The content provided on this website, including research papers, security architectural patterns, and blog posts, is for informational purposes only. While I strive for accuracy, the information is provided "as is" without warranties. 
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
-
-#### Google Analytics
-
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
-
-#### Google Adsense
-
-Google Adsense, a third party affiliate marketing network, uses cookies to help make sure I get a commission when you buy a product after clicking on a link or ad banner that takes you to the site of one of their merchants. You can read [Google Adsense Privacy Policy](http://support.google.com/adsense/bin/answer.py?hl=en&answer=48182).
-
-## Disclosure Policy
-
-I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
-
-Currently I'm an affiliate for Amazon and Google Adsense.
-
-What this means for you:
-
-* I became an affiliate to earn revenue towards the costs of running and maintaining this website. Where I have direct control over which ads are served on this website I offer only products that are directly related to the topic of this website and products that a reader/subscriber would have a genuine interest in or need of.
-* I do not and will not recommend a product just for the sake of making money.
-* I do not let the compensation I receive influence the content, topics, posts, or opinions expressed on this website.
-* I respect and value my readers too much to write anything other than my own genuine and objective opinions and advice.
-
-Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
+### Attribution
+Unless otherwise noted, the work on this site is my own. You are welcome to reference it with proper attribution to **Keshawn White** and a link back to this site.

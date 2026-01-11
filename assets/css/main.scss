@@ -7,3 +7,17 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Custom Styles
+   ========================================================================== */
+
+/* Logo Transparency Fix:
+   'multiply' makes white backgrounds transparent against dark themes.
+   Works best if your logo text/art is dark or colorful.
+*/
+.masthead__logo img {
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) brightness(1.1);
+  background-color: transparent !important;
+}
