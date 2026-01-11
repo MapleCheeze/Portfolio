@@ -3,13 +3,13 @@ name: build
 on:
   push:
     branches:
-      - master
+      - Prod
   workflow_dispatch: {}
   repository_dispatch: {}
 
 jobs:
   build:
-    if: github.repository == 'mmistakes/minimal-mistakes'
+    if: github.repository == 'Portfolio'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -33,7 +33,7 @@ jobs:
     - name: Install - Bundler
       env:
         MAKE: make -j2
-      working-directory: docs/
+      working-directory: /
       run: |
         bundle config set path vendor/bundle
         bundle install --jobs=4 --retry=3
