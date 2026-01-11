@@ -33,7 +33,7 @@ jobs:
     - name: Install - Bundler
       env:
         MAKE: make -j2
-      working-directory: /
+      working-directory: ./
       run: |
         bundle config set path vendor/bundle
         bundle install --jobs=4 --retry=3
