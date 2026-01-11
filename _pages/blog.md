@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 ---
-title: "My Blog"
 layout: posts
+title: "Research & Insights"
 permalink: /blog/
 author_profile: true
+entries_layout: list
 ---
-=======
----
-title: "My Blog"
-layout: posts
-permalink: /blog/
-author_profile: true
----
->>>>>>> 2774720c9b7ae5db09ebcaea46732d3bddc023b9
+
+Welcome to my digital garden.
