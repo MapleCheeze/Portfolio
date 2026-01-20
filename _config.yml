@@ -133,10 +133,12 @@ author:
 footer:
   links:
     - label: "Privacy & Terms"
-      icon: "fas fa-fw fa-file-contract" # A "document" icon
+      icon: "fas fa-fw fa-file-contract"
       url: "/Portfolio/terms/"
-  since: "2026"
+  since: 2026
+  hide_powered_by: true
 
+copyright: "NoBoundsLLC"
 
 # Reading Files
 include:
