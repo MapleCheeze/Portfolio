@@ -10,8 +10,8 @@ header:
   overlay_image: /assets/images/portfolio-header.jpg
 ---
 
-## Technical Case Studies
-From enterprise SIEM migrations to custom automation runbooks to run effiecenty SecOperations.
+## A Collection of Security & Privacy Blueprints
 
-## Privacy & Ethics Projects
-Exploring the intersection of data protection, GDPR compliance, and privacy-preserving technologies.
+Every project in this cookbook is a unique preparation of technical skill and ethical design. Whether it’s a robust Cybersecurity framework or a specialized Privacy implementation, each recipe is crafted to solve a specific challenge at the intersection of protection and trust.
+
+Browse the full menu below.
