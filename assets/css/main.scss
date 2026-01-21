@@ -21,3 +21,26 @@ search: false
   filter: contrast(1.1) brightness(1.1);
   background-color: transparent !important;
 }
+
+/* Enlarges the logo and adjusts the 'zoom' */
+.masthead__logo img {
+  /* Increase max-height to make the logo physically larger */
+  max-height: 5rem !important; 
+  
+  /* 'transform: scale' acts as a zoom without changing the container size */
+  transform: scale(1.2); 
+  
+  /* Ensures the zoomed logo stays centered */
+  transform-origin: left center;
+  
+  /* Adds a little extra space so the zoomed edges don't clip */
+  margin-right: 1.5rem !important; 
+  
+  vertical-align: middle;
+}
+
+/* Adjusts the masthead height to accommodate a larger logo */
+.masthead__inner-wrap {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
