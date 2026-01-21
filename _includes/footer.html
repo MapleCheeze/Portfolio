@@ -1,10 +1,6 @@
 {% if site.footer.links %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-
     {% for link in site.footer.links %}
       {% if link.label and link.url %}
         <li><a href="{{ link.url | relative_url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
@@ -14,4 +10,4 @@
 </div>
 {% endif %}
 
-<div class="page__footer-copyright">&copy; {{ site.footer.since | default: site.time | date: '%Y' }} {{ site.copyright | default: site.title }}.</div>
+<div class="page__footer-copyright">&copy; 2026 NoBounds, LLC. All Rights Reserved.</div>

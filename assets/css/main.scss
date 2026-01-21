@@ -12,35 +12,28 @@ search: false
    Custom Styles
    ========================================================================== */
 
-/* Logo Transparency Fix:
-   'multiply' makes white backgrounds transparent against dark themes.
-   Works best if your logo text/art is dark or colorful.
+/* COMBINED LOGO FIX 
+   - Handles the transparency blend
+   - Forces a much larger size (8rem / 1.5 scale)
 */
 .masthead__logo img {
+  /* Blend Mode (Keep if your logo has a white background) */
   mix-blend-mode: multiply;
   filter: contrast(1.1) brightness(1.1);
   background-color: transparent !important;
-}
 
-/* Enlarges the logo and adjusts the 'zoom' */
-.masthead__logo img {
-  /* Increase max-height to make the logo physically larger */
-  max-height: 5rem !important; 
-  
-  /* 'transform: scale' acts as a zoom without changing the container size */
-  transform: scale(1.2); 
-  
-  /* Ensures the zoomed logo stays centered */
+  /* Size & Zoom - We are going BIG here to force the change */
+  max-height: 8rem !important;      /* Increased from 5rem to 8rem */
+  width: auto !important;
+  transform: scale(1.5);            /* Increased from 1.2 to 1.5 */
   transform-origin: left center;
-  
-  /* Adds a little extra space so the zoomed edges don't clip */
-  margin-right: 1.5rem !important; 
-  
-  vertical-align: middle;
+  margin-right: 2rem !important;
+  padding-top: 5px;                 /* Adds breathing room */
 }
 
-/* Adjusts the masthead height to accommodate a larger logo */
+/* Adjust the container so the big logo fits */
 .masthead__inner-wrap {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  min-height: 120px !important;     /* Forces the navbar to be taller */
+  display: flex;
+  align-items: center;
 }
