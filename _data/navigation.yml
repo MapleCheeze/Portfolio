@@ -2,11 +2,5 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
-  - title: "Blog"
-    url: /blog/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Sitemap"
-    url: /sitemap/
