@@ -1,13 +1,61 @@
 ---
-layout: single
+layout: splash
 permalink: /
-author_profile: true
 title: "About Me"
 header:
   overlay_color: "#333"
   overlay_image: /assets/images/header-bg.jpg
   overlay_filter: 0.4
+  actions:
+    - label: "View My Portfolio"
+      url: "/portfolio/"
 excerpt: "Cybersecurity Professional | Problem Solver | Lifelong Learner"
+
+skills_row:
+  - title: "Security Operations & Analysis"
+    excerpt: >
+      - Threat Hunting & Incident Response
+
+      - Vulnerability Management
+
+      - Log Analysis & Alert Triage
+
+      - Security Monitoring
+  - title: "Networking & Infrastructure"
+    excerpt: >
+      - Firewall Configuration & Management
+
+      - VPN Setup & Secure Protocols
+
+      - Network Segmentation
+
+      - IDS/IPS Deployment
+  - title: "Tools & Platforms"
+    excerpt: >
+      - Splunk, Wireshark, Nmap
+
+      - Nessus, OpenVAS
+
+      - Sysmon, Windows Event Logs
+
+      - Kali Linux
+
+projects_row:
+  - title: "SIEM Threat Detection"
+    excerpt: "Deployed and configured a SIEM solution to monitor, detect, and respond to security events."
+    url: "/portfolio/siem-threat-detection/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+  - title: "Network Security & Firewall"
+    excerpt: "Designed and implemented a segmented network with firewall rules, VPN tunnels, and IDS/IPS."
+    url: "/portfolio/network-security-firewall/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+  - title: "Vulnerability Assessment"
+    excerpt: "Conducted vulnerability scans, analyzed findings, and applied remediation to harden systems."
+    url: "/portfolio/vulnerability-assessment/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
 ---
 
 <!-- Update these numbers as you grow -->
@@ -23,29 +71,12 @@ I'm a Cybersecurity Professional focused on protecting digital assets and buildi
 ---
 
 ## Skills
+{: .text-center}
 
-**Security Operations & Analysis**
-- Threat Hunting & Incident Response
-- Vulnerability Management
-- Log Analysis & Alert Triage
-- Security Monitoring
+{% include feature_row id="skills_row" %}
 
-**Networking & Infrastructure**
-- Firewall Configuration & Management
-- VPN Setup & Secure Protocols
-- Network Segmentation
-- IDS/IPS Deployment
-
-**Tools & Platforms**
-- Splunk, Wireshark, Nmap
-- Nessus, OpenVAS
-- Sysmon, Windows Event Logs
-- Kali Linux
-
-**Scripting & Automation**
-- Python
-- Bash
-- PowerShell
+**Scripting & Automation:** Python, Bash, PowerShell
+{: .text-center}
 
 ---
 
@@ -60,7 +91,13 @@ I'm a Cybersecurity Professional focused on protecting digital assets and buildi
 
 ---
 
-[Check out my projects](/portfolio/){: .btn .btn--primary .btn--large}
+## Featured Projects
+{: .text-center}
+
+{% include feature_row id="projects_row" %}
+
+[See All Projects](/portfolio/){: .btn .btn--primary .btn--large}
+{: .text-center}
 
 ---
 
