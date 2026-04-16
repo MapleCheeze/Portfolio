@@ -22,7 +22,7 @@ author:
       url: "mailto:keshawnwhite38@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/keshawn-white"
+      url: "https://www.linkedin.com/in/keshawn-white/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
@@ -32,7 +32,7 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/keshawn-white"
+      url: "https://www.linkedin.com/in/keshawn-white/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:

@@ -84,9 +84,11 @@ projects_row:
 
 ## Hey, I'm Keshawn
 
-I'm a Cybersecurity Professional with experience leading enterprise security operations, driving automation, and aligning programs with global compliance frameworks. I architect threat detection and response strategies, build security programs from the ground up, and translate technical risk into business strategy.
+I got into technology early -- what started as curiosity about how systems worked turned into a career protecting them. I studied Network Security at Macomb Community College, where I led the Cybersecurity Club, and went on to earn my BS in Information Technology from Walsh College.
 
-Outside of work, I volunteer as a Cyber Security Advisor with the CyberPeace Institute and serve on ISC2 chapter boards.
+Since then, I've built my career around enterprise security -- architecting SIEM platforms, automating incident response workflows, and standing up data governance programs across global operations. I've led migrations from legacy tools to modern cloud-native stacks, built detection engineering pipelines from scratch, and aligned security programs with frameworks like ISO 27001, NIST, and GDPR.
+
+What drives me is the bigger picture: translating technical risk into business strategy, mentoring the next generation of security professionals, and building programs that scale. I hold my CISSP, CISM, and multiple Microsoft security certifications, and I stay active in the community as a Cyber Security Advisor with the CyberPeace Institute and through ISC2 chapter leadership.
 
 ---
 
@@ -124,4 +126,4 @@ Outside of work, I volunteer as a Cyber Security Advisor with the CyberPeace Ins
 I'm always open to connecting -- whether it's about cybersecurity, a project idea, or an opportunity.
 
 - **Email:** [keshawnwhite38@gmail.com](mailto:keshawnwhite38@gmail.com)
-- **LinkedIn:** [linkedin.com/in/keshawn-white](https://linkedin.com/in/keshawn-white)
+- **LinkedIn:** [linkedin.com/in/keshawn-white](https://www.linkedin.com/in/keshawn-white/)
