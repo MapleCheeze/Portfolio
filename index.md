@@ -9,64 +9,84 @@ header:
   actions:
     - label: "View My Portfolio"
       url: "/portfolio/"
-excerpt: "Cybersecurity Professional | Problem Solver | Lifelong Learner"
+excerpt: "Security Architect | Strategy & Automation | Mentor & Advisor"
 
 skills_row:
-  - title: "Security Operations & Analysis"
+  - title: "Security Operations & Engineering"
     excerpt: >
-      - Threat Hunting & Incident Response
+      - Threat Detection & Incident Response
 
-      - Vulnerability Management
+      - SIEM Architecture (Microsoft Sentinel)
 
-      - Log Analysis & Alert Triage
+      - Detection Engineering (KQL)
 
-      - Security Monitoring
-  - title: "Networking & Infrastructure"
+      - Data Governance & DLP (Purview)
+  - title: "Cloud Security & Identity"
     excerpt: >
-      - Firewall Configuration & Management
+      - Microsoft Defender XDR Suite
 
-      - VPN Setup & Secure Protocols
+      - Azure Security & Defender for Cloud
 
-      - Network Segmentation
+      - Entra ID & Conditional Access
 
-      - IDS/IPS Deployment
-  - title: "Tools & Platforms"
+      - CASB Rollout & Policy Enforcement
+  - title: "Automation & Compliance"
     excerpt: >
-      - Splunk, Wireshark, Nmap
+      - Python, PowerShell, KQL
 
-      - Nessus, OpenVAS
+      - Logic Apps & Runbook Automation
 
-      - Sysmon, Windows Event Logs
+      - ISO 27001, NIST 800-53/171
 
-      - Kali Linux
+      - GDPR, NIS2, CMMC, CSF 2.0
+
+certs_row:
+  - image_path:
+    alt: "CISSP"
+    title: "CISSP"
+    excerpt: "ISC2"
+  - image_path:
+    alt: "CISM"
+    title: "CISM"
+    excerpt: "ISACA"
+  - image_path:
+    alt: "SC-100"
+    title: "Cybersecurity Architect Expert (SC-100)"
+    excerpt: "Microsoft"
+
+certs_row_2:
+  - image_path:
+    alt: "AZ-500"
+    title: "Azure Security Engineer (AZ-500)"
+    excerpt: "Microsoft"
+  - image_path:
+    alt: "SC-200"
+    title: "Security Operations Analyst (SC-200)"
+    excerpt: "Microsoft"
 
 projects_row:
-  - title: "SIEM Threat Detection"
-    excerpt: "Deployed and configured a SIEM solution to monitor, detect, and respond to security events."
-    url: "/portfolio/siem-threat-detection/"
+  - title: "Sentinel SIEM Migration"
+    excerpt: "Led migration from AlienVault to Microsoft Sentinel, designing custom log ingestion pipelines and cutting annual SIEM costs by $60K."
+    url: "/portfolio/sentinel-siem-migration/"
     btn_label: "View Project"
     btn_class: "btn--primary"
-  - title: "Network Security & Firewall"
-    excerpt: "Designed and implemented a segmented network with firewall rules, VPN tunnels, and IDS/IPS."
-    url: "/portfolio/network-security-firewall/"
+  - title: "Incident Response Automation"
+    excerpt: "Automated phishing response by integrating KnowBe4 Phish Alert with custom runbooks, reducing false-positive tickets from 200 to 5 per week."
+    url: "/portfolio/incident-response-automation/"
     btn_label: "View Project"
     btn_class: "btn--primary"
-  - title: "Vulnerability Assessment"
-    excerpt: "Conducted vulnerability scans, analyzed findings, and applied remediation to harden systems."
-    url: "/portfolio/vulnerability-assessment/"
+  - title: "Enterprise Data Governance"
+    excerpt: "Operationalized Microsoft Purview with sensitivity labels, DLP policies, and retention controls across M365 and Azure."
+    url: "/portfolio/enterprise-data-governance/"
     btn_label: "View Project"
     btn_class: "btn--primary"
 ---
 
-<!-- Update these numbers as you grow -->
-**X Security Labs** | **X Certifications** | **X Tools Proficient**
-{: .text-center .notice--info}
-
 ## Hey, I'm Keshawn
 
-I'm a Cybersecurity Professional focused on protecting digital assets and building secure network infrastructures. When I'm not hunting threats or hardening systems, I'm exploring new technologies and sharpening my skills through hands-on lab projects.
+I'm a Cybersecurity Professional with experience leading enterprise security operations, driving automation, and aligning programs with global compliance frameworks. I architect threat detection and response strategies, build security programs from the ground up, and translate technical risk into business strategy.
 
-<!-- Add your personal story here: what drew you to cybersecurity, where you're headed -->
+Outside of work, I volunteer as a Cyber Security Advisor with the CyberPeace Institute and serve on ISC2 chapter boards.
 
 ---
 
@@ -75,19 +95,17 @@ I'm a Cybersecurity Professional focused on protecting digital assets and buildi
 
 {% include feature_row id="skills_row" %}
 
-**Scripting & Automation:** Python, Bash, PowerShell
+**Additional:** Azure DevOps, Nessus Pro, Abnormal Security, Security Copilot
 {: .text-center}
 
 ---
 
 ## Certifications
+{: .text-center}
 
-<!-- Replace with your actual certifications. Examples: -->
-<!-- - **CompTIA Security+** -- CompTIA, 2025 | [Verify](link) -->
-<!-- - **Google Cybersecurity Certificate** -- Google, 2025 | [Verify](link) -->
-<!-- - **AWS Cloud Practitioner** -- Amazon, 2025 | [Verify](link) -->
+{% include feature_row id="certs_row" %}
 
-*Coming soon*
+{% include feature_row id="certs_row_2" %}
 
 ---
 
@@ -104,8 +122,6 @@ I'm a Cybersecurity Professional focused on protecting digital assets and buildi
 ## Get in Touch
 
 I'm always open to connecting -- whether it's about cybersecurity, a project idea, or an opportunity.
-
-Open to **SOC Analyst**, **Security Analyst**, and **Cybersecurity Engineer** roles.
 
 - **Email:** [keshawnwhite38@gmail.com](mailto:keshawnwhite38@gmail.com)
 - **LinkedIn:** [linkedin.com/in/keshawn-white](https://linkedin.com/in/keshawn-white)

@@ -6,7 +6,7 @@ locale                   : "en-US"
 title                    : "Keshawn White"
 title_separator          : "-"
 name                     : "Keshawn White"
-description              : "Cybersecurity Professional - Personal Portfolio"
+description              : "Keshawn White - Cybersecurity Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://yourdomain.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name
@@ -15,8 +15,7 @@ repository               : # GitHub username/repo-name
 author:
   name             : "Keshawn White"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : '"Everything in the universe has a rhythm, everything dances." - Maya Angelou'
-  location         : "United States"
+  bio              : "Cybersecurity Analyst | CISSP | CISM | Microsoft Security"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
