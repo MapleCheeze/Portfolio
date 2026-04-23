@@ -65,30 +65,37 @@ certs_row_2:
     excerpt: "Microsoft"
 
 projects_row:
-  - title: "Sentinel SIEM Migration"
-    excerpt: "Led migration from AlienVault to Microsoft Sentinel, designing custom log ingestion pipelines and cutting annual SIEM costs by $60K."
-    url: "/portfolio/sentinel-siem-migration/"
+  - title: "Cybersecurity Power BI Dashboard"
+    excerpt: "Built a Power BI dashboard for my team to track key cybersecurity KPIs and overall program health at a glance."
+    url: "/portfolio/cybersecurity-powerbi-dashboard/"
     btn_label: "View Project"
     btn_class: "btn--primary"
-  - title: "Incident Response Automation"
-    excerpt: "Automated phishing response by integrating KnowBe4 Phish Alert with custom runbooks, reducing false-positive tickets from 200 to 5 per week."
-    url: "/portfolio/incident-response-automation/"
+  - title: "Sentinel SIEM Ingestion Transformation"
+    excerpt: "Designed ingestion-time transformations in Microsoft Sentinel to normalize, enrich, and filter logs before they hit the workspace."
+    url: "/portfolio/sentinel-ingestion-transformation/"
     btn_label: "View Project"
     btn_class: "btn--primary"
-  - title: "Enterprise Data Governance"
-    excerpt: "Operationalized Microsoft Purview with sensitivity labels, DLP policies, and retention controls across M365 and Azure."
-    url: "/portfolio/enterprise-data-governance/"
+  - title: "Impossible Travel Workflow"
+    excerpt: "Built an end-to-end workflow to detect, triage, and respond to impossible travel alerts across identity and endpoint signals."
+    url: "/portfolio/impossible-travel-workflow/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+  - title: "Device Tagging (Defender for Endpoint)"
+    excerpt: "Designed and automated a device tagging strategy in Defender for Endpoint to drive targeted policies, detections, and reporting."
+    url: "/portfolio/device-tagging-defender/"
     btn_label: "View Project"
     btn_class: "btn--primary"
 ---
 
 ## Hey, I'm Keshawn
 
-I got into technology early -- what started as curiosity about how systems worked turned into a career protecting them. I studied Network Security at Macomb Community College, where I led the Cybersecurity Club, and went on to earn my BS in Information Technology from Walsh College.
+I'm a cybersecurity professional who loves tech and is always staying ahead of the curve. I'm passionate about the intersection of people and technology -- I believe true security comes from empowering individuals to be part of the solution, not just locking things down.
 
-Since then, I've built my career around enterprise security -- architecting SIEM platforms, automating incident response workflows, and standing up data governance programs across global operations. I've led migrations from legacy tools to modern cloud-native stacks, built detection engineering pipelines from scratch, and aligned security programs with frameworks like ISO 27001, NIST, and GDPR.
+I got into technology early. What started as curiosity about how systems worked turned into a career protecting them. I studied Network Security at Macomb Community College, where I led the Cybersecurity Club, and went on to earn my BS in Information Technology from Walsh College.
 
-What drives me is the bigger picture: translating technical risk into business strategy, mentoring the next generation of security professionals, and building programs that scale. I hold my CISSP, CISM, and multiple Microsoft security certifications, and I stay active in the community as a Cyber Security Advisor with the CyberPeace Institute and through ISC2 chapter leadership.
+Since then, I've built my career around enterprise security in cloud-focused Microsoft environments -- architecting SIEM platforms, automating incident response workflows, and standing up data governance programs across global operations. I'm constantly learning and applying new insights to protect systems while bridging the gap between technology and the people who use them.
+
+What drives me is the bigger picture: translating technical risk into business strategy, mentoring the next generation of security professionals, and building scalable cybersecurity approaches that actually work. I hold my CISSP, CISM, and multiple Microsoft security certifications, and I stay active in the community as a Cyber Security Advisor with the CyberPeace Institute and through ISC2 chapter leadership.
 
 ---
 

@@ -15,7 +15,7 @@ repository               : # GitHub username/repo-name
 author:
   name             : "Keshawn White"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Cybersecurity Analyst | CISSP | CISM | Microsoft Security"
+  bio              : "CISSP | CISM | Security Engineering | Compliance & Risk"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
