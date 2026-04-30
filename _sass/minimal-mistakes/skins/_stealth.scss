@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Stealth skin - dark + cyan accents (cybersec)
+   ========================================================================== */
+
+/* Colors */
+$background-color: #0d1117 !default;
+$text-color: #c9d1d9 !default;
+$muted-text-color: #8b949e !default;
+$primary-color: #00d4ff !default;
+$border-color: #30363d !default;
+$code-background-color: #161b22 !default;
+$code-background-color-dark: #010409 !default;
+$form-background-color: #161b22 !default;
+$footer-background-color: #010409 !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}

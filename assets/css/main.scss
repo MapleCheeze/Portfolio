@@ -7,3 +7,188 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Custom overrides - stealth theme refinements
+   ========================================================================== */
+
+/* JetBrains Mono for accents */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Body uses Inter for readability; monospace lives on accents */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Section headings + card titles in monospace for tech feel */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.archive__item-title,
+.greedy-nav .site-title,
+.greedy-nav a {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Subtle accent underline for h2 section headings */
+.page__content h2 {
+  position: relative;
+  padding-bottom: 0.4em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background: $primary-color;
+    margin: 0.5em auto 0;
+    border-radius: 2px;
+  }
+}
+
+/* Hero header text in monospace */
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__lead {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ==========================================================================
+   Card styling - borders, hover lift, glow
+   ========================================================================== */
+.feature__wrapper .archive__item {
+  background: #161b22;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $primary-color;
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+  }
+}
+
+.feature__wrapper .archive__item-title {
+  color: $text-color;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.feature__wrapper .archive__item-excerpt {
+  color: $muted-text-color;
+  font-size: 0.9rem;
+}
+
+/* Buttons in cards */
+.feature__wrapper .btn--primary {
+  background-color: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $background-color;
+  }
+}
+
+/* Portfolio collection grid items get the same treatment */
+.grid__item .archive__item {
+  background: #161b22;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $primary-color;
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+  }
+}
+
+/* ==========================================================================
+   Alternating section backgrounds (scroll-based feel)
+   ========================================================================== */
+.page__content {
+  /* Each <hr> divides a section. Alternate background bands using sibling selectors. */
+  > h2 {
+    margin-top: 4rem;
+  }
+
+  > hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $border-color, transparent);
+    margin: 4rem 0;
+  }
+}
+
+/* ==========================================================================
+   Scroll reveal animation
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Auto-apply reveal to common splash content */
+.splash .page__content > h2,
+.splash .page__content > p,
+.splash .feature__wrapper {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Hero refinements
+   ========================================================================== */
+.page__hero--overlay {
+  padding: 6em 0;
+
+  .page__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .page__lead {
+    font-size: 1rem;
+    color: $primary-color;
+    letter-spacing: 0.05em;
+  }
+
+  .btn {
+    border: 1px solid $primary-color;
+    background: transparent;
+    color: $primary-color;
+    font-family: 'JetBrains Mono', monospace;
+
+    &:hover {
+      background: $primary-color;
+      color: $background-color;
+    }
+  }
+}
+
+/* Subtle accent bar on masthead */
+.masthead {
+  border-bottom: 1px solid $border-color;
+}

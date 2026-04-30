@@ -10,6 +10,8 @@ sidebar:
     text: "Microsoft Defender for Endpoint, Graph API, PowerShell, Logic Apps"
   - title: "Skills Demonstrated"
     text: "Endpoint strategy, tag taxonomy design, automation, RBAC alignment"
+  - title: "Code & Templates"
+    text: "[tech-cookbook/defender-for-endpoint/device-tagging](https://github.com/keshawn-white/tech-cookbook/tree/main/defender-for-endpoint/device-tagging)"
 ---
 
 ## Overview

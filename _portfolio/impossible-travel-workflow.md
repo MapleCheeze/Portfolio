@@ -10,6 +10,8 @@ sidebar:
     text: "Microsoft Sentinel, Entra ID, Defender XDR, Logic Apps, KQL"
   - title: "Skills Demonstrated"
     text: "Detection engineering, SOAR automation, identity security, false-positive tuning"
+  - title: "Code & Templates"
+    text: "[tech-cookbook/sentinel/impossible-travel](https://github.com/keshawn-white/tech-cookbook/tree/main/sentinel/impossible-travel)"
 ---
 
 ## Overview

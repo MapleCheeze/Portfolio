@@ -10,6 +10,8 @@ sidebar:
     text: "Microsoft Sentinel, Data Collection Rules (DCR), KQL, Log Analytics"
   - title: "Skills Demonstrated"
     text: "Log pipeline design, ingestion-time transformation, cost optimization, data normalization"
+  - title: "Code & Templates"
+    text: "[tech-cookbook/sentinel/ingestion-transformations](https://github.com/keshawn-white/tech-cookbook/tree/main/sentinel/ingestion-transformations)"
 ---
 
 ## Overview
