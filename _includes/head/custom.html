@@ -2,28 +2,74 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
-<!-- Scroll reveal animations -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    if (!('IntersectionObserver' in window)) return;
 
-    var targets = document.querySelectorAll(
-      '.splash .page__content > h2, ' +
-      '.splash .page__content > p, ' +
-      '.splash .feature__wrapper, ' +
-      '.reveal'
-    );
-
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
+    /* ----- Scroll reveal (IntersectionObserver) ----- */
+    if ('IntersectionObserver' in window) {
+      var revealTargets = document.querySelectorAll('.reveal-stagger, .reveal');
+      var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+      revealTargets.forEach(function(t) { revealObserver.observe(t); });
+    } else {
+      // Fallback: just reveal everything
+      document.querySelectorAll('.reveal-stagger, .reveal').forEach(function(el) {
+        el.classList.add('is-visible');
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+    }
 
-    targets.forEach(function(t) { observer.observe(t); });
+    /* ----- Custom cursor (only on devices that hover) ----- */
+    var canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+    var notMobile = window.matchMedia && window.matchMedia('(min-width: 769px)').matches;
+
+    if (canHover && notMobile) {
+      var dot = document.createElement('div');
+      dot.className = 'cursor-dot';
+      var ring = document.createElement('div');
+      ring.className = 'cursor-ring';
+      document.body.appendChild(dot);
+      document.body.appendChild(ring);
+
+      var mouseX = -100, mouseY = -100;
+      var ringX = -100, ringY = -100;
+
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        dot.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+      });
+
+      function animateRing() {
+        ringX += (mouseX - ringX) * 0.18;
+        ringY += (mouseY - ringY) * 0.18;
+        ring.style.transform = 'translate(' + ringX + 'px, ' + ringY + 'px)';
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+
+      // Expand ring on interactive elements
+      var hoverSelector = 'a, button, .project-item, .cert-item, .skill-block li';
+      document.querySelectorAll(hoverSelector).forEach(function(el) {
+        el.addEventListener('mouseenter', function() { ring.classList.add('is-hover'); });
+        el.addEventListener('mouseleave', function() { ring.classList.remove('is-hover'); });
+      });
+
+      // Hide cursor when leaving window
+      document.addEventListener('mouseleave', function() {
+        dot.style.opacity = '0';
+        ring.style.opacity = '0';
+      });
+      document.addEventListener('mouseenter', function() {
+        dot.style.opacity = '1';
+        ring.style.opacity = '1';
+      });
+    }
   });
 </script>
 
