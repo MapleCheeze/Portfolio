@@ -9,8 +9,7 @@ classes:
 
 <section class="hero-section reveal-stagger">
   <div class="hero-content">
-    <h1 class="hero-name">Keshawn<br>White<span class="hero-period">.</span></h1>
-    <p class="hero-tagline">// Security Architect<br>// Strategy &amp; Automation<br>// Mentor &amp; Advisor</p>
+    <p class="hero-tagline">// Security Architect &amp; Engineer<br>// AI Governance, Responsible AI &amp; Privacy by Design<br>// Strategy &amp; Automation<br>// Mentor &amp; Advisor</p>
   </div>
   <div class="hero-scroll">
     <span>Scroll</span>
@@ -22,13 +21,19 @@ classes:
 
 ## About
 
-I'm a cybersecurity professional who loves tech and is always staying ahead of the curve. I'm passionate about the intersection of people and technology -- I believe true security comes from empowering individuals to be part of the solution, not just locking things down.
+I've always been drawn to how things work. Not just the surface of it, but the logic underneath. Technology was never a career path I chose so much as a direction I kept moving in naturally. The more I pulled on it, the more was there.
 
-I got into technology early. What started as curiosity about how systems worked turned into a career protecting them. I studied Network Security at Macomb Community College, where I led the Cybersecurity Club, and went on to earn my BS in Information Technology from Walsh College.
+That same pull shows up everywhere in my life. On a trail or a rock face, the interesting part isn't the destination. It's reading the terrain, making a call with incomplete information, and adjusting as you go. I've found that problems in technology, especially in security and privacy, reward exactly that kind of thinking. The willingness to step into something before you fully understand it, trust your foundation, and figure out the rest in motion.
 
-Since then, I've built my career around enterprise security in cloud-focused Microsoft environments -- architecting SIEM platforms, automating incident response workflows, and standing up data governance programs across global operations. I'm constantly learning and applying new insights to protect systems while bridging the gap between technology and the people who use them.
+> "You can't use up creativity. The more you use, the more you have." — Maya Angelou
 
-What drives me is the bigger picture: translating technical risk into business strategy, mentoring the next generation of security professionals, and building scalable cybersecurity approaches that actually work. I hold my CISSP, CISM, and multiple Microsoft security certifications, and I stay active in the community as a Cyber Security Advisor with the CyberPeace Institute and through ISC2 chapter leadership.
+That's how I've approached every problem I've worked on. Not treating knowledge as a fixed resource to be rationed, but as something that compounds the more you put it to use. I've built security programs from nothing, worked across tools and disciplines most practitioners treat as separate, and picked up privacy alongside security because the two problems were always the same problem viewed from different angles.
+
+I'm also just genuinely comfortable not knowing. Exploring a new route, a new technology, a new approach, means starting without a map. That doesn't unsettle me. It's usually where the most interesting work happens.
+
+> "Everything in the universe has a rhythm, everything dances." — Maya Angelou
+
+There's a rhythm to how disciplines connect too: security, privacy, automation, architecture. I've spent my career at those intersections, building things that hold, advising where it matters, and staying curious enough to keep finding new terrain worth exploring.
 
 </section>
 

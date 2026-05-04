@@ -3,6 +3,9 @@ title: "Device Tagging in Defender for Endpoint"
 excerpt: "Designed and automated a device tagging strategy in Microsoft Defender for Endpoint to drive targeted policies, detections, and reporting."
 header:
   teaser: /assets/images/portfolio/device-tagging-teaser.jpg
+toc: true
+toc_sticky: true
+toc_label: "On this page"
 sidebar:
   - title: "Domain"
     text: "Endpoint Security & Asset Management"
@@ -16,16 +19,39 @@ sidebar:
 
 ## Overview
 
-<!-- Describe the problem: why tagging mattered (policy scoping, reporting, device groups, RBAC) -->
+<!-- The problem: without tags, every policy/detection/report applies to "all devices" or has to be hand-curated.
+This made device groups, RBAC scoping, and targeted detections operationally painful. -->
 
 ## Tag Taxonomy
 
-<!-- Walk through the tag categories and naming conventions you designed -->
+<!-- The categories and naming conventions you designed. Examples:
+- Environment: prod, dev, lab
+- Sensitivity: high, medium, standard
+- Function: workstation, server, kiosk, OT
+- Owner / business unit
+Show the structure -- ideally a table. -->
 
-## Automation
+## Automation Architecture
 
-<!-- Describe how tagging is applied/maintained: manual vs automated, data sources, sync logic -->
+<!-- ![Device tagging automation](/assets/images/portfolio/device-tagging/device-tagging-flow.svg) -->
+<!-- Source of truth (CMDB, AAD groups, naming convention), the Logic App / function that syncs,
+Graph API endpoints, run cadence. -->
 
-## Impact
+## How Tags Drive Operations
 
-<!-- How tags are now used: device groups, targeted detections, policy scoping, reporting -->
+### Device Groups & RBAC
+<!-- How tags map to MDE device groups and analyst access. -->
+
+### Targeted Detections
+<!-- Custom detections scoped by tag. Example: stricter rules for high-sensitivity devices. -->
+
+### Reporting & Compliance
+<!-- Power BI / Sentinel queries that pivot on tags for compliance evidence. -->
+
+## Outcomes
+
+<!-- Reduction in mis-scoped policies, RBAC clarity, detection precision improvements, audit value. -->
+
+## Lessons Learned
+
+<!-- Tag drift, ownership of taxonomy, what to keep vs prune over time. -->
