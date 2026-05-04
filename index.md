@@ -41,30 +41,47 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
   <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
     <div class="skill-block">
-      <h3>Security Operations &amp; Engineering</h3>
+      <h3>Security Operations and Engineering</h3>
       <ul>
-        <li>Threat Detection &amp; Incident Response</li>
+        <li>Threat Detection and Incident Response</li>
         <li>SIEM Architecture (Microsoft Sentinel)</li>
         <li>Detection Engineering (KQL)</li>
-        <li>Data Governance &amp; DLP (Purview)</li>
+        <li>Data Governance and DLP (Purview)</li>
       </ul>
     </div>
     <div class="skill-block">
-      <h3>Cloud Security &amp; Identity</h3>
+      <h3>Cloud and Identity</h3>
       <ul>
         <li>Microsoft Defender XDR Suite</li>
-        <li>Azure Security &amp; Defender for Cloud</li>
-        <li>Entra ID &amp; Conditional Access</li>
-        <li>CASB Rollout &amp; Policy Enforcement</li>
+        <li>Azure Security and Defender for Cloud</li>
+        <li>Entra ID and Conditional Access</li>
+        <li>CASB Rollout and Policy Enforcement</li>
       </ul>
     </div>
     <div class="skill-block">
-      <h3>Automation &amp; Compliance</h3>
+      <h3>Privacy</h3>
       <ul>
-        <li>Python, PowerShell, KQL</li>
-        <li>Logic Apps &amp; Runbook Automation</li>
-        <li>ISO 27001, NIST 800-53/171</li>
-        <li>GDPR, NIS2, CMMC, CSF 2.0</li>
+        <li>Privacy Program Implementation</li>
+        <li>Privacy by Design</li>
+        <li>GDPR, NIS2, CCPA</li>
+      </ul>
+    </div>
+    <div class="skill-block">
+      <h3>AI Governance</h3>
+      <ul>
+        <li>NIST AI Risk Management Framework</li>
+        <li>ISO 42001</li>
+        <li>OWASP AI Security</li>
+        <li>Responsible AI Principles</li>
+      </ul>
+    </div>
+    <div class="skill-block">
+      <h3>Compliance</h3>
+      <ul>
+        <li>ISO 27001</li>
+        <li>NIST 800-53 and 800-171</li>
+        <li>CMMC</li>
+        <li>CSF 2.0</li>
       </ul>
     </div>
   </div>
@@ -145,8 +162,9 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
 </section>
 
 <section class="contact-section reveal-stagger">
-  <h2 class="section-title">Contact</h2>
-  <p class="contact-intro">Always open to connecting -- whether it's about cybersecurity, a project idea, or an opportunity.</p>
+  <h2 class="section-title">Let's connect</h2>
+  <p class="contact-tagline">Always down for something interesting.</p>
+  <p class="contact-intro">If you're building something, starting something, or figuring something out, I'm genuinely open to hearing about it. I like being around people who are curious and doing things, whether that's a security conversation, a startup idea, a community worth building, or a project that doesn't have a clean category yet.</p>
   <ul class="contact-list">
     <li><a href="mailto:keshawnwhite38@gmail.com">keshawnwhite38@gmail.com</a></li>
     <li><a href="https://www.linkedin.com/in/keshawn-white/">linkedin.com/in/keshawn-white</a></li>

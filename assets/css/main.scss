@@ -193,9 +193,17 @@ section {
    ========================================================================== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 4rem 6rem;
   max-width: 90rem;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .skills-grid { grid-template-columns: 1fr; }
 }
 
 .skill-block h3 {
@@ -421,6 +429,16 @@ section {
 /* ==========================================================================
    Contact
    ========================================================================== */
+.contact-tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
 .contact-intro {
   font-size: clamp(1rem, 1.4vw, 1.25rem);
   line-height: 1.8;
