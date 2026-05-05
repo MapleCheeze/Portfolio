@@ -93,11 +93,69 @@ section {
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+}
+
+.hero-content {
+  flex: 1 1 60%;
+  min-width: 0;
+}
+
+.hero-photo {
+  flex: 0 1 38%;
+  max-width: 480px;
+  position: relative;
+}
+
+.hero-photo-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px -1px auto auto;
+    width: 24px;
+    height: 24px;
+    border-top: 2px solid var(--accent);
+    border-right: 2px solid var(--accent);
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: auto auto -1px -1px;
+    width: 24px;
+    height: 24px;
+    border-bottom: 2px solid var(--accent);
+    border-left: 2px solid var(--accent);
+    z-index: 2;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(0.4) brightness(0.92) contrast(1.05);
+    transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  &:hover img {
+    filter: grayscale(0) brightness(1) contrast(1);
+    transform: scale(1.02);
+  }
 }
 
 .hero-name {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(3.5rem, 14vw, 14rem);
+  font-size: clamp(3rem, 10vw, 10rem);
   font-weight: 700;
   line-height: 0.85;
   letter-spacing: -0.05em;
@@ -606,6 +664,8 @@ section {
     background: transparent;
     font-family: 'JetBrains Mono', monospace;
 
+    .site-title { display: none; }
+
     a {
       letter-spacing: 0.05em;
       &:hover { color: var(--accent); }
@@ -618,6 +678,22 @@ section {
 /* ==========================================================================
    Mobile tweaks
    ========================================================================== */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .hero-content,
+  .hero-photo {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+  .hero-photo {
+    max-width: 280px;
+  }
+}
+
 @media (max-width: 768px) {
   section { padding: 6rem 1.5rem; min-height: auto; }
   .hero-section { min-height: 100vh; }

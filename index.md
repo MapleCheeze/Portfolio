@@ -9,7 +9,13 @@ classes:
 
 <section class="hero-section reveal-stagger">
   <div class="hero-content">
+    <h1 class="hero-name">Keshawn<br>White<span class="hero-period">.</span></h1>
     <p class="hero-tagline">// Security Architect &amp; Engineer<br>// AI Governance, Responsible AI &amp; Privacy by Design<br>// Strategy &amp; Automation<br>// Mentor &amp; Advisor</p>
+  </div>
+  <div class="hero-photo">
+    <div class="hero-photo-frame">
+      <img src="/assets/images/hero-photo.jpg" alt="Keshawn White" />
+    </div>
   </div>
   <div class="hero-scroll">
     <span>Scroll</span>
