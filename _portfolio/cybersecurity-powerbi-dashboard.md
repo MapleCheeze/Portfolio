@@ -44,7 +44,7 @@ The dashboard is organized around the six areas that matter most in the program.
 | **Email Security** | Who's being targeted and what's being delivered or blocked? |
 | **Risk Register** | A living record of known risks and current status |
 
-<!-- ![Dashboard overview page](/assets/images/portfolio/powerbi/page1-dashboard.png) -->
+![Dashboard overview page]({{ '/assets/images/portfolio/powerbi/page1-dashboard.png' | relative_url }})
 
 ## Key Metrics That Drive the Overview
 
@@ -54,8 +54,6 @@ These are the numbers leadership reads first. Each was chosen because it actuall
 - **EDR / Antivirus Coverage** -- the percentage of devices with active endpoint protection. Foundational, and easy to let slip without a dashboard surfacing it.
 - **New CVEs in the Environment (Last 7 Days)** -- newly discovered known vulnerabilities specifically affecting *our* assets. Drives weekly patching priorities.
 - **KnowBe4 Phishing Campaign Results** -- click-through rates over time on simulated phishing tests. Whether security awareness training is actually working.
-
-<!-- ![KPI overview metrics](/assets/images/portfolio/powerbi/page1-dashboard.png) -->
 
 ## Architecture
 
@@ -74,15 +72,15 @@ The Defender vulnerability connector uses a custom M-language query that authent
 ## Dashboard Views
 
 ### Vulnerability Posture
-<!-- ![Vulnerability page](/assets/images/portfolio/powerbi/page2-vulnerability.png) -->
+![Vulnerability page]({{ '/assets/images/portfolio/powerbi/page2-vulnerability.png' | relative_url }})
 Trend lines on open vulnerabilities by severity, MTTR by criticality, top vulnerable assets, and CVE-level drill-down.
 
 ### Incidents
-<!-- ![Incidents page](/assets/images/portfolio/powerbi/page3-incidents.png) -->
+![Incidents page]({{ '/assets/images/portfolio/powerbi/page3-incidents.png' | relative_url }})
 Incident volume by category, MTTR distribution, top alert types, and false-positive rate trending.
 
 ### Email Security
-<!-- ![Email security page](/assets/images/portfolio/powerbi/page4-email-security.png) -->
+![Email security page]({{ '/assets/images/portfolio/powerbi/page4-email-security.png' | relative_url }})
 Top targeted users, attack types, blocked vs. delivered ratios, and KnowBe4 simulation outcomes alongside real phishing data.
 
 ## Outcomes

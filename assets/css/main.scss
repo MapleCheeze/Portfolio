@@ -673,7 +673,80 @@ section {
   }
 }
 
-#main { padding-top: 0; }
+/* Inner pages (project detail, etc.) need clearance below the fixed masthead */
+#main { padding-top: 5rem; }
+
+/* Splash landing page hides the masthead background and uses full-bleed sections */
+body.layout--splash #main { padding-top: 0; }
+
+/* Sticky sidebars need to anchor below the fixed masthead, not behind it */
+.sidebar.sticky,
+.sidebar__right.sticky {
+  top: 5rem;
+}
+
+/* Project detail page tweaks - keep content readable on the dark theme */
+.layout--single {
+  .page__content {
+    color: var(--text);
+
+    h1, h2, h3, h4 {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text);
+    }
+
+    h2 {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4em;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: var(--accent);
+      &:hover { color: mix(#fff, #00d4ff, 20%); }
+    }
+
+    img {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin: 1.5rem 0;
+    }
+
+    code {
+      background: var(--bg-2);
+      color: var(--accent);
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      overflow-x: auto;
+
+      code {
+        background: transparent;
+        padding: 0;
+        color: var(--text);
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+
+      th, td {
+        border: 1px solid var(--border);
+        padding: 0.6rem 1rem;
+      }
+      th { background: var(--bg-2); color: var(--accent); font-family: 'JetBrains Mono', monospace; }
+    }
+  }
+}
 
 /* ==========================================================================
    Mobile tweaks
