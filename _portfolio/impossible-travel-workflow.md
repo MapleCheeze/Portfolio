@@ -1,6 +1,6 @@
 ---
 title: "Impossible Travel Detection Workflow"
-excerpt: "Built an end-to-end workflow to detect, triage, and respond to impossible travel alerts across identity and endpoint signals."
+excerpt: "End-to-end detection, enrichment, and response workflow for impossible-travel sign-ins -- tuned to cut false-positive churn and shrink time-to-action."
 header:
   teaser: /assets/images/portfolio/impossible-travel-teaser.jpg
 toc: true
@@ -14,38 +14,42 @@ sidebar:
   - title: "Skills Demonstrated"
     text: "Detection engineering, SOAR automation, identity security, false-positive tuning"
   - title: "Code & Templates"
-    text: "[tech-cookbook/sentinel/impossible-travel](https://github.com/keshawn-white/tech-cookbook/tree/main/sentinel/impossible-travel)"
+    text: "[tech-cookbook/sentinel/impossible-travel](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/sentinel/impossible-travel)"
 ---
 
 ## Overview
 
-<!-- The problem: impossible-travel alerts are noisy by default. Out-of-the-box, analysts churn on VPN/proxy false positives.
-What the goal of this workflow was: reduce noise, automate enrichment, response in minutes not hours. -->
+<!-- The problem: out-of-the-box impossible-travel alerts are noisy. VPN/proxy traffic, cloud-hosted clients, and legitimate travel all create signal that looks like compromise.
+What changed: built a workflow that handles the noisy 90% automatically and routes only the genuinely suspicious cases to analysts. -->
 
 ## Detection Logic
 
-<!-- KQL or Sentinel analytic rule: signals correlated (sign-in logs, MCAS, Defender for Identity),
-thresholds, suppression conditions. -->
+<!-- The KQL/analytic rule logic that triggers the workflow.
+Signals correlated, suppression conditions, thresholds. -->
 
 ## Workflow Diagram
 
-<!-- ![Impossible travel workflow](/assets/images/portfolio/impossible-travel/impossible-travel-v2.svg) -->
-<!-- Trigger → enrichment → user verification → conditional access action → escalation paths -->
+<!-- ![Impossible travel workflow](/assets/images/portfolio/impossible-travel/impossible-travel-v3.svg) -->
 
 ## Enrichment & Triage
 
-<!-- What context gets pulled before analyst sees the alert: user risk score, recent sign-ins,
-device compliance, location reputation, MFA history. -->
+<!-- What context the workflow attaches before an analyst (or the user) sees it:
+- User risk score from Entra ID Protection
+- Recent sign-in pattern (last 7d/30d locations)
+- Device compliance state
+- MFA history on the session
+- Known VPN/proxy ASN check -->
 
 ## Response Actions
 
-<!-- Automated: user prompt-to-confirm, conditional access policy invocation, session revocation.
-Manual escalation criteria. SOC notifications. -->
+<!-- Automated path: prompt-to-confirm to user, conditional access policy invocation,
+session revocation if uncontested, escalation to analyst on suspicious response.
+Manual path: how/when an analyst gets pulled in. -->
 
 ## Outcomes
 
-<!-- False-positive reduction %, MTTR change, analyst hours saved per week. -->
+<!-- False-positive reduction, MTTR change, analyst hours saved per week. -->
 
 ## Lessons Learned
 
-<!-- VPN/proxy carve-outs, regional travel patterns, executive-tier exemptions, etc. -->
+<!-- VPN/proxy carve-outs, executive travel exemptions, the limits of "user prompt-to-confirm." -->

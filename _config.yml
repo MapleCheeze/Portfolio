@@ -7,9 +7,9 @@ title                    : "Keshawn White"
 title_separator          : "-"
 name                     : "Keshawn White"
 description              : "Keshawn White - Cybersecurity Portfolio"
-url                      : # the base hostname & protocol for your site e.g. "https://yourdomain.com"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name
+url                      : "https://maplecheeze.github.io"
+baseurl                  : "/Portfolio"
+repository               : "MapleCheeze/Portfolio"
 
 # Site Author
 author:

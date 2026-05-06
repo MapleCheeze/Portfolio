@@ -14,7 +14,7 @@ classes:
   </div>
   <div class="hero-photo">
     <div class="hero-photo-frame">
-      <img src="/assets/images/hero-photo.jpg" alt="Keshawn White" />
+      <img src="{{ '/assets/images/hero-photo.jpg' | relative_url }}" alt="Keshawn White" />
     </div>
   </div>
   <div class="hero-scroll">
@@ -124,7 +124,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
   <h2 class="section-title">Projects</h2>
   <ul class="project-list">
     <li class="project-item">
-      <a href="/portfolio/cybersecurity-powerbi-dashboard/">
+      <a href="{{ '/portfolio/cybersecurity-powerbi-dashboard/' | relative_url }}">
         <span class="project-number">01</span>
         <div class="project-body">
           <span class="project-title">Cybersecurity Power BI Dashboard</span>
@@ -134,7 +134,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
       </a>
     </li>
     <li class="project-item">
-      <a href="/portfolio/sentinel-ingestion-transformation/">
+      <a href="{{ '/portfolio/sentinel-ingestion-transformation/' | relative_url }}">
         <span class="project-number">02</span>
         <div class="project-body">
           <span class="project-title">Sentinel SIEM Ingestion Transformation</span>
@@ -144,7 +144,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
       </a>
     </li>
     <li class="project-item">
-      <a href="/portfolio/impossible-travel-workflow/">
+      <a href="{{ '/portfolio/impossible-travel-workflow/' | relative_url }}">
         <span class="project-number">03</span>
         <div class="project-body">
           <span class="project-title">Impossible Travel Workflow</span>
@@ -154,7 +154,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
       </a>
     </li>
     <li class="project-item">
-      <a href="/portfolio/device-tagging-defender/">
+      <a href="{{ '/portfolio/device-tagging-defender/' | relative_url }}">
         <span class="project-number">04</span>
         <div class="project-body">
           <span class="project-title">Device Tagging in Defender for Endpoint</span>
@@ -164,7 +164,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
       </a>
     </li>
   </ul>
-  <a href="/portfolio/" class="all-projects-link">All projects <span>→</span></a>
+  <a href="{{ '/portfolio/' | relative_url }}" class="all-projects-link">All projects <span>→</span></a>
 </section>
 
 <section class="contact-section reveal-stagger">
