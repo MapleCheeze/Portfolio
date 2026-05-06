@@ -4,7 +4,7 @@ excerpt: "Designed ingestion-time transformations in Microsoft Sentinel to norma
 header:
   teaser: /assets/images/portfolio/sentinel-teaser.jpg
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "On this page"
 sidebar:
   - title: "Domain"

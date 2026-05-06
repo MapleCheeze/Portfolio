@@ -4,7 +4,7 @@ excerpt: "Designed and automated a department-aware device tagging strategy in M
 header:
   teaser: /assets/images/portfolio/device-tagging-teaser.jpg
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "On this page"
 sidebar:
   - title: "Domain"

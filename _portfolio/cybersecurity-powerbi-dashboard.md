@@ -4,7 +4,7 @@ excerpt: "Built a centralized, automated Power BI dashboard pulling from six sec
 header:
   teaser: /assets/images/portfolio/powerbi-teaser.jpg
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "On this page"
 sidebar:
   - title: "Domain"

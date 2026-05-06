@@ -4,7 +4,7 @@ excerpt: "Currently leading the rollout of Microsoft Defender for Cloud across o
 header:
   teaser: /assets/images/portfolio/defender-cloud-teaser.jpg
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "On this page"
 sidebar:
   - title: "Domain"

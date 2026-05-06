@@ -4,7 +4,7 @@ excerpt: "End-to-end detection, enrichment, and response workflow for impossible
 header:
   teaser: /assets/images/portfolio/impossible-travel-teaser.jpg
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "On this page"
 sidebar:
   - title: "Domain"
