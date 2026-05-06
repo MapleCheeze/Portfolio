@@ -41,9 +41,7 @@ Naming follows Entra ID's existing department field exactly, so the system stays
 
 ## Architecture
 
-<!-- ![Device tagging automation flow](/assets/images/portfolio/device-tagging/device-tagging-flow.svg) -->
-
-The workflow joins identity data to device data inside Microsoft 365 Defender Advanced Hunting, then a Logic App pushes the resulting tags back into Defender via the API on a weekly schedule.
+The workflow joins identity data to device data inside Microsoft 365 Defender Advanced Hunting, then a Logic App pushes the resulting tags back into Defender via the API on a weekly schedule. The full sanitized Logic App template is published in the [Tech-Cookbook repo](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/defender-for-endpoint/device-tagging) so it can be deployed and adapted directly.
 
 **1. Map users to departments** -- query Entra ID's identity table for the latest department assignment per user:
 

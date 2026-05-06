@@ -163,6 +163,16 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
         <span class="project-arrow">→</span>
       </a>
     </li>
+    <li class="project-item">
+      <a href="{{ '/portfolio/defender-for-cloud-devops/' | relative_url }}">
+        <span class="project-number">05</span>
+        <div class="project-body">
+          <span class="project-title">Defender for Cloud &amp; DevOps Governance</span>
+          <span class="project-blurb">Leading the rollout of Microsoft Defender for Cloud and embedding governance directly into Azure DevOps pipelines -- an ongoing program to make secure-by-default the path of least resistance.</span>
+        </div>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
   </ul>
   <a href="{{ '/portfolio/' | relative_url }}" class="all-projects-link">All projects <span>→</span></a>
 </section>
