@@ -9,7 +9,7 @@ site's unique needs. Please keep this in mind when requesting features and/or
 submitting pull requests. If it's not something that most people will use, I 
 probably won't consider it. When in doubt ask.
 
-This goes for author sidebar links and "share button" additions -- I have no 
+This goes for author sidebar links and "share button" additions, I have no 
 intention of merging in every possibly option, the essentials are there to get 
 you started :smile:.
 

@@ -31,13 +31,13 @@ I've always been drawn to how things work. Not just the surface of it, but the l
 
 That same pull shows up everywhere in my life. On a trail or a rock face, the interesting part isn't the destination. It's reading the terrain, making a call with incomplete information, and adjusting as you go. I've found that problems in technology, especially in security and privacy, reward exactly that kind of thinking. The willingness to step into something before you fully understand it, trust your foundation, and figure out the rest in motion.
 
-> "You can't use up creativity. The more you use, the more you have." — Maya Angelou
+> "You can't use up creativity. The more you use, the more you have." - Maya Angelou
 
 That's how I've approached every problem I've worked on. Not treating knowledge as a fixed resource to be rationed, but as something that compounds the more you put it to use. I've built security programs from nothing, worked across tools and disciplines most practitioners treat as separate, and picked up privacy alongside security because the two problems were always the same problem viewed from different angles.
 
 I'm also just genuinely comfortable not knowing. Exploring a new route, a new technology, a new approach, means starting without a map. That doesn't unsettle me. It's usually where the most interesting work happens.
 
-> "Everything in the universe has a rhythm, everything dances." — Maya Angelou
+> "Everything in the universe has a rhythm, everything dances." - Maya Angelou
 
 There's a rhythm to how disciplines connect too: security, privacy, automation, architecture. I've spent my career at those intersections, building things that hold, advising where it matters, and staying curious enough to keep finding new terrain worth exploring.
 
@@ -117,6 +117,28 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
       <span class="cert-name">Security Operations Analyst <em>(SC-200)</em></span>
       <span class="cert-issuer">Microsoft</span>
     </li>
+    <li class="cert-item">
+      <span class="cert-name">Information Privacy Manager <em>(CIPM)</em></span>
+      <span class="cert-issuer">IAPP</span>
+    </li>
+  </ul>
+</section>
+
+<section class="community-section reveal-stagger">
+  <h2 class="section-title">Community Building</h2>
+  <ul class="cert-list">
+    <li class="cert-item">
+      <span class="cert-name">CyberPeace Builder</span>
+      <span class="cert-issuer">CyberPeace Institute</span>
+    </li>
+    <li class="cert-item">
+      <span class="cert-name">Board Member</span>
+      <span class="cert-issuer">ISC2 Local Chapter</span>
+    </li>
+    <li class="cert-item">
+      <span class="cert-name">Steering Committee Board Member</span>
+      <span class="cert-issuer">ISC2 Regional</span>
+    </li>
   </ul>
 </section>
 
@@ -168,7 +190,17 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
         <span class="project-number">05</span>
         <div class="project-body">
           <span class="project-title">Defender for Cloud &amp; DevOps Governance</span>
-          <span class="project-blurb">Leading the rollout of Microsoft Defender for Cloud and embedding governance directly into Azure DevOps pipelines -- an ongoing program to make secure-by-default the path of least resistance.</span>
+          <span class="project-blurb">Leading the rollout of Microsoft Defender for Cloud and embedding governance directly into Azure DevOps pipelines, an ongoing program to make secure-by-default the path of least resistance.</span>
+        </div>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+    <li class="project-item">
+      <a href="{{ '/portfolio/ngo-endpoint-security/' | relative_url }}">
+        <span class="project-number">06</span>
+        <div class="project-body">
+          <span class="project-title">Endpoint Security for an International NGO</span>
+          <span class="project-blurb">Volunteer work through CyberPeace Builders: designed BYOD architecture and authored a plain-language endpoint security guide for the remote workforce of an international NGO without in-house IT capacity.</span>
         </div>
         <span class="project-arrow">→</span>
       </a>

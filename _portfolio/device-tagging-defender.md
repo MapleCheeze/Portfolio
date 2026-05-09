@@ -19,9 +19,9 @@ sidebar:
 
 ## Overview
 
-In Microsoft Defender for Endpoint, every device is just a name on a list until you tell the platform what it is. Without context, an analyst responding to an incident has to stop and figure out which department a device belongs to, who uses it, and how sensitive its data is -- usually by chasing information across spreadsheets and directory tools. That lookup costs time at exactly the moment time matters most.
+In Microsoft Defender for Endpoint, every device is just a name on a list until you tell the platform what it is. Without context, an analyst responding to an incident has to stop and figure out which department a device belongs to, who uses it, and how sensitive its data is, usually by chasing information across spreadsheets and directory tools. That lookup costs time at exactly the moment time matters most.
 
-Device tagging is built into Defender, included at no extra cost, and almost universally underused. I designed an automated tagging system that pulls department data from Entra ID and applies it to devices on a schedule, so context is always present in Defender itself -- no separate lookup required.
+Device tagging is built into Defender, included at no extra cost, and almost universally underused. I designed an automated tagging system that pulls department data from Entra ID and applies it to devices on a schedule, so context is always present in Defender itself, no separate lookup required.
 
 ## Goals
 
@@ -34,8 +34,8 @@ Device tagging is built into Defender, included at no extra cost, and almost uni
 
 A consistent prefix-based convention so tags stay readable and case-sensitive collisions don't create duplicates:
 
-- **DEPT-{Name}** — department, sourced directly from Entra ID (e.g., `DEPT-Finance`, `DEPT-IT`)
-- **SITE-{Name}** — physical or logical location (e.g., `SITE-Remote`, `SITE-HQ`)
+- **DEPT-{Name}**: department, sourced directly from Entra ID (e.g., `DEPT-Finance`, `DEPT-IT`)
+- **SITE-{Name}**: physical or logical location (e.g., `SITE-Remote`, `SITE-HQ`)
 
 Naming follows Entra ID's existing department field exactly, so the system stays self-consistent if HR or IT change conventions upstream.
 
@@ -43,7 +43,7 @@ Naming follows Entra ID's existing department field exactly, so the system stays
 
 The workflow joins identity data to device data inside Microsoft 365 Defender Advanced Hunting, then a Logic App pushes the resulting tags back into Defender via the API on a weekly schedule. The full sanitized Logic App template is published in the [Tech-Cookbook repo](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/defender-for-endpoint/device-tagging) so it can be deployed and adapted directly.
 
-**1. Map users to departments** -- query Entra ID's identity table for the latest department assignment per user:
+**1. Map users to departments**, query Entra ID's identity table for the latest department assignment per user:
 
 ```kql
 IdentityInfo
@@ -52,7 +52,7 @@ IdentityInfo
 | project AccountUpn, Department
 ```
 
-**2. Join devices to that map** -- enumerate logged-on users per device and pull their department:
+**2. Join devices to that map**, enumerate logged-on users per device and pull their department:
 
 ```kql
 let DeptMap =
@@ -69,7 +69,7 @@ DeviceInfo
 | project DeviceId, DeviceName, UserUpn, Department
 ```
 
-**3. Reconcile and apply** -- a Logic App compares the resulting tag list against current device tags in Defender and writes only the deltas:
+**3. Reconcile and apply**, a Logic App compares the resulting tag list against current device tags in Defender and writes only the deltas:
 
 - Add tags where they're missing
 - Remove tags when a user has moved departments
@@ -86,15 +86,15 @@ Tags map directly to Defender device groups, which scope analyst access. Finance
 Custom analytic rules in Sentinel filter on device tags, so high-sensitivity device groups can run stricter rules without spamming false positives across the rest of the fleet.
 
 ### Reporting & Compliance
-Vulnerability reports, incident dashboards, and audit evidence pivot on department tags. Instead of "40 devices have a critical vuln," reporting becomes "8 in Finance, 3 in HR" -- routable, accountable.
+Vulnerability reports, incident dashboards, and audit evidence pivot on department tags. Instead of "40 devices have a critical vuln," reporting becomes "8 in Finance, 3 in HR", routable, accountable.
 
 ## Outcomes
 
-- **Incident context immediate** -- analysts no longer interrupt response to chase device ownership
-- **Vulnerability remediation routed by department** -- tickets go to the right team leads from the start
-- **Tags stayed accurate** -- the weekly reconcile prevented the stale-tag drift that kills manual systems
-- **Scoping logic consolidated** -- detections, RBAC, and reporting all anchor on the same taxonomy
+- **Incident context immediate**: analysts no longer interrupt response to chase device ownership
+- **Vulnerability remediation routed by department**: tickets go to the right team leads from the start
+- **Tags stayed accurate**: the weekly reconcile prevented the stale-tag drift that kills manual systems
+- **Scoping logic consolidated**: detections, RBAC, and reporting all anchor on the same taxonomy
 
 ## Lessons Learned
 
-The most important design decision was building tag *removal* into the workflow from day one. Without it, tags accumulate and become actively misleading after a few rounds of department changes. A tagging system that quietly lies is worse than no tagging at all -- the cleanup logic is what makes the rest trustworthy.
+The most important design decision was building tag *removal* into the workflow from day one. Without it, tags accumulate and become actively misleading after a few rounds of department changes. A tagging system that quietly lies is worse than no tagging at all, the cleanup logic is what makes the rest trustworthy.

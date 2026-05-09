@@ -14,7 +14,7 @@ sidebar:
   - title: "Skills Demonstrated"
     text: "Cloud security architecture, DevSecOps, Azure governance, policy as code, program leadership"
   - title: "Status"
-    text: "In progress -- ongoing rollout"
+    text: "In progress, ongoing rollout"
 ---
 
 ## Overview
@@ -28,7 +28,7 @@ The driver is straightforward: cloud workloads have grown faster than the progra
 - Stand up Defender for Cloud across all Azure subscriptions with consistent CSPM and CWPP coverage
 - Establish a governance baseline through Azure Policy, management groups, and naming/tagging standards
 - Integrate security gates into Azure DevOps pipelines so misconfigurations and risky changes are caught at PR time
-- Build the operating model so this is sustainable -- ownership, exceptions, and remediation paths are all defined
+- Build the operating model so this is sustainable, ownership, exceptions, and remediation paths are all defined
 - Treat policy and governance as code, versioned in DevOps the same as everything else
 
 ## Approach
@@ -47,7 +47,7 @@ The driver is straightforward: cloud workloads have grown faster than the progra
 
 ## Architecture Diagram
 
-<!-- Workflow diagram coming once sanitized. -->
+![DevOps security pipeline architecture]({{ '/assets/images/portfolio/defender-cloud/devops-pipeline.svg' | relative_url }})
 
 ## Where It Stands
 

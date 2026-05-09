@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Power BI Dashboard"
-excerpt: "Built a centralized, automated Power BI dashboard pulling from six security tools to give leadership a real-time view of program health -- and replace a fragile, manual spreadsheet process."
+excerpt: "Built a centralized, automated Power BI dashboard pulling from six security tools to give leadership a real-time view of program health, and replace a fragile, manual spreadsheet process."
 header:
   teaser: /assets/images/portfolio/powerbi-teaser.jpg
 toc: true
@@ -17,11 +17,11 @@ sidebar:
 
 ## Overview
 
-Before this dashboard, the weekly security briefing was assembled by hand. Reports were downloaded from each tool, pasted into a spreadsheet, and stitched together over a Sunday evening every week. The result captured a slice of program health -- some vulnerability numbers, some alert counts -- but most of what mattered never made it into the conversation.
+Before this dashboard, the weekly security briefing was assembled by hand. Reports were downloaded from each tool, pasted into a spreadsheet, and stitched together over a Sunday evening every week. The result captured a slice of program health, some vulnerability numbers, some alert counts, but most of what mattered never made it into the conversation.
 
 Worse, the whole process lived with one person. Miss the prep window because something urgent came up (which happens constantly in security), and leadership walked into the meeting with stale information or no information at all.
 
-I designed and built a single Power BI dashboard that pulls from every security tool in the program automatically, refreshes on a schedule, and gives leadership a meeting-ready view of security posture in under five minutes -- no spreadsheets, no scavenger hunt, no single point of failure.
+I designed and built a single Power BI dashboard that pulls from every security tool in the program automatically, refreshes on a schedule, and gives leadership a meeting-ready view of security posture in under five minutes, no spreadsheets, no scavenger hunt, no single point of failure.
 
 ## Goals
 
@@ -48,12 +48,12 @@ The dashboard is organized around the six areas that matter most in the program.
 
 ## Key Metrics That Drive the Overview
 
-These are the numbers leadership reads first. Each was chosen because it actually moves with program health -- not because it was easy to chart.
+These are the numbers leadership reads first. Each was chosen because it actually moves with program health, not because it was easy to chart.
 
-- **MTTR (Mean Time to Remediate)** -- separated by critical and high severity. Trending up means vulnerabilities sit unpatched longer, which widens the attacker window.
-- **EDR / Antivirus Coverage** -- the percentage of devices with active endpoint protection. Foundational, and easy to let slip without a dashboard surfacing it.
-- **New CVEs in the Environment (Last 7 Days)** -- newly discovered known vulnerabilities specifically affecting *our* assets. Drives weekly patching priorities.
-- **KnowBe4 Phishing Campaign Results** -- click-through rates over time on simulated phishing tests. Whether security awareness training is actually working.
+- **MTTR (Mean Time to Remediate)**: separated by critical and high severity. Trending up means vulnerabilities sit unpatched longer, which widens the attacker window.
+- **EDR / Antivirus Coverage**: the percentage of devices with active endpoint protection. Foundational, and easy to let slip without a dashboard surfacing it.
+- **New CVEs in the Environment (Last 7 Days)**: newly discovered known vulnerabilities specifically affecting *our* assets. Drives weekly patching priorities.
+- **KnowBe4 Phishing Campaign Results**: click-through rates over time on simulated phishing tests. Whether security awareness training is actually working.
 
 ## Architecture
 
@@ -61,11 +61,11 @@ Each security tool exposes data through APIs. Power BI connects to those APIs th
 
 **Data sources connected:**
 
-- **Microsoft Sentinel** -- the SIEM, pulled via Advanced Hunting API for incidents, alerts, and SIEM cost telemetry
-- **Microsoft Defender** -- endpoint vulnerabilities and coverage via the Defender API
-- **Abnormal Security** -- email threat protection telemetry
-- **KnowBe4** -- phishing campaign results
-- **SharePoint** -- the internal Risk Register list
+- **Microsoft Sentinel**: the SIEM, pulled via Advanced Hunting API for incidents, alerts, and SIEM cost telemetry
+- **Microsoft Defender**: endpoint vulnerabilities and coverage via the Defender API
+- **Abnormal Security**: email threat protection telemetry
+- **KnowBe4**: phishing campaign results
+- **SharePoint**: the internal Risk Register list
 
 The Defender vulnerability connector uses a custom M-language query that authenticates via OAuth and pulls vulnerability data through the Advanced Hunting endpoint. That query is published in the [tech-cookbook repo](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/reporting/cybersec-powerbi-dashboard) so it's reusable.
 
@@ -85,14 +85,14 @@ Top targeted users, attack types, blocked vs. delivered ratios, and KnowBe4 simu
 
 ## Outcomes
 
-- **One meeting-ready view across six security domains** -- no more toggling between five tools to answer one question
-- **Leadership started asking better questions** -- because they could finally see the data clearly, the conversation shifted from "what happened?" to "why is this trending this way?"
-- **Coverage gaps surfaced immediately** -- devices missing endpoint protection that had slipped through manual review
-- **The risk register became a living document** -- pulled into the same view as everything else, it stopped being a compliance checkbox and started informing decisions
-- **Hours recovered every week** -- the manual prep cycle disappeared
+- **One meeting-ready view across six security domains**: no more toggling between five tools to answer one question
+- **Leadership started asking better questions**: because they could finally see the data clearly, the conversation shifted from "what happened?" to "why is this trending this way?"
+- **Coverage gaps surfaced immediately**: devices missing endpoint protection that had slipped through manual review
+- **The risk register became a living document**: pulled into the same view as everything else, it stopped being a compliance checkbox and started informing decisions
+- **Hours recovered every week**: the manual prep cycle disappeared
 
 ## What I'd Do Next
 
 - Anomaly detection on KPI trends so the dashboard surfaces shifts before someone has to notice them
 - Embed key views directly into Microsoft Teams for the leadership channel
-- Automated weekly commentary -- a short narrative that reads the data and writes the story for the briefing
+- Automated weekly commentary, a short narrative that reads the data and writes the story for the briefing

@@ -1,6 +1,6 @@
 ---
 title: "Impossible Travel Detection Workflow"
-excerpt: "End-to-end detection, enrichment, and response workflow for impossible-travel sign-ins -- tuned to cut false-positive churn and shrink time-to-action."
+excerpt: "End-to-end detection, enrichment, and response workflow for impossible-travel sign-ins, tuned to cut false-positive churn and shrink time-to-action."
 header:
   teaser: /assets/images/portfolio/impossible-travel-teaser.jpg
 toc: true
@@ -14,7 +14,7 @@ sidebar:
   - title: "Skills Demonstrated"
     text: "Detection engineering, SOAR automation, identity security, false-positive tuning"
   - title: "Code & Templates"
-    text: "[tech-cookbook/sentinel/impossible-travel](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/sentinel/impossible-travel)"
+    text: "[tech-cookbook/security-operations/impossible-travel](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/security-operations/impossible-travel)"
 ---
 
 ## Overview
