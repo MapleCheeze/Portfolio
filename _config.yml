@@ -14,8 +14,8 @@ repository               : "MapleCheeze/Portfolio"
 # Site Author
 author:
   name             : "Keshawn White"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "CISSP | CISM | Security Engineering | Compliance & Risk"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "**Curious by nature. Builder by practice.**"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -124,7 +124,7 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
 
 # HTML Compression

@@ -1,6 +1,6 @@
 ---
 title: "Endpoint Security for an International NGO"
-excerpt: "Volunteer engagement through CyberPeace Builders: worked with the leadership of an international NGO to design endpoint security controls for their remote workforce and produce accessible documentation staff actually read."
+excerpt: "Security Advisor engagement through the CyberPeace Institute: worked with the leadership of an international NGO to design endpoint security controls for their remote workforce and produce accessible documentation staff actually read."
 header:
   teaser: /assets/images/portfolio/ngo-endpoint-teaser.jpg
 toc: true
@@ -12,7 +12,7 @@ sidebar:
   - title: "Tools & Frameworks"
     text: "BYOD architecture, MFA / password managers, mobile device controls, VPN guidance"
   - title: "Engagement Type"
-    text: "Volunteer (CyberPeace Builders), advisory + documentation"
+    text: "Security Advisor through the CyberPeace Institute, advisory + documentation"
   - title: "Skills Demonstrated"
     text: "Stakeholder engagement, control design for resource-constrained orgs, plain-language security writing"
 ---
@@ -21,7 +21,7 @@ sidebar:
 
 The client was an international NGO whose staff increasingly worked remotely on a mix of personal and organizational devices. The org had no in-house IT security capacity, a small budget, and a workforce distributed across regions, network conditions, and threat environments. The leadership knew the risks were real but didn't have a coherent way to address them: there was no shared baseline for what "secure enough" looked like, and the controls they had weren't paired with anything staff could actually read and act on.
 
-I joined as a volunteer through CyberPeace Builders to work with their leadership on two fronts at once: designing endpoint controls that fit the org's actual capacity, and producing documentation staff would use rather than ignore.
+I joined as a Security Advisor through the CyberPeace Institute to work with their leadership on two fronts at once: designing endpoint controls that fit the org's actual capacity, and producing documentation staff would use rather than ignore.
 
 ## Approach
 
@@ -56,4 +56,4 @@ The architecture below shows the BYOD control flow: how personal devices accessi
 - **Budget reality matters more than ideal architecture.** An NGO with no IT specialist needs controls they can stand up themselves and maintain without expert help. Recommendations that require a paid MDM or a dedicated admin would have been ignored, regardless of how technically sound.
 - **The doc is the deliverable, not the policy.** A formal policy that nobody reads doesn't change behavior. The staff guide was deliberately framed as helpful advice with reasoning attached ("why this matters") rather than a list of mandates.
 - **Lowest-friction path wins.** MFA via authenticator apps over SMS, browser-based VPN clients, password managers with personal-use free tiers, biometric over PIN: every recommendation was chosen partly for what staff would actually adopt.
-- **Volunteer engagement boundaries.** The work delivered a baseline. Sustained operation, audit, and incident response remain the org's responsibility, with CyberPeace Builders available for follow-on engagements as needed.
+- **Advisory engagement boundaries.** The work delivered a baseline. Sustained operation, audit, and incident response remain the org's responsibility, with the CyberPeace Institute available for follow-on engagements as needed.

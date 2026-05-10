@@ -128,7 +128,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
   <h2 class="section-title">Community Building</h2>
   <ul class="cert-list">
     <li class="cert-item">
-      <span class="cert-name">CyberPeace Builder</span>
+      <span class="cert-name">Security Advisor</span>
       <span class="cert-issuer">CyberPeace Institute</span>
     </li>
     <li class="cert-item">
@@ -200,7 +200,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
         <span class="project-number">06</span>
         <div class="project-body">
           <span class="project-title">Endpoint Security for an International NGO</span>
-          <span class="project-blurb">Volunteer work through CyberPeace Builders: designed BYOD architecture and authored a plain-language endpoint security guide for the remote workforce of an international NGO without in-house IT capacity.</span>
+          <span class="project-blurb">Security Advisor engagement through the CyberPeace Institute: designed BYOD architecture and authored a plain-language endpoint security guide for the remote workforce of an international NGO without in-house IT capacity.</span>
         </div>
         <span class="project-arrow">→</span>
       </a>
