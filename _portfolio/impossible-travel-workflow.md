@@ -13,8 +13,6 @@ sidebar:
     text: "Microsoft Sentinel, Entra ID, Defender XDR, Logic Apps, KQL"
   - title: "Skills Demonstrated"
     text: "Detection engineering, SOAR automation, identity security, false-positive tuning"
-  - title: "Code & Templates"
-    text: "[tech-cookbook/security-operations/impossible-travel](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/security-operations/impossible-travel)"
 ---
 
 ## Overview
@@ -71,3 +69,38 @@ The auto-handle vs. escalate boundary was tuned over several weeks of running th
 - **User-prompt fatigue is real.** Prompt too often and people click through without reading. The rule has to be tight enough that the prompt itself signals "this matters, look closely."
 - **Session revocation has user impact.** Revoking sessions logs the user out of every active session. Match the action to the signal severity. Don't over-rotate on weak evidence.
 - **The auto-handle line will be wrong on day one.** Plan for tuning runs. The SOC should own the criteria over time.
+
+## Code & Templates
+
+The full sanitized Logic App, analytic rule logic, and supporting queries live in [Tech-Cookbook / security-operations / impossible-travel](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/security-operations/impossible-travel). The pieces below are the callouts worth highlighting when reading through the export.
+
+### Sentinel trigger and incident scoping
+
+<!-- Paste the trigger section from the Logic App JSON here as a fenced code block. -->
+<!-- Callout: explain why the workflow is scoped to the specific impossible-travel analytic rule rather than triggering on every Sentinel incident. -->
+
+### Region and ASN suppression (rule-level)
+
+<!-- Paste the relevant where-clauses from the analytic rule KQL here. -->
+<!-- Callout: explain why these suppressions live at the rule level, not in the Logic App, and what happens when teams put them in the wrong layer. -->
+
+### Enrichment composition
+
+<!-- Paste the Logic App actions that fetch user risk, sign-in history, device compliance, and ASN reputation. -->
+<!-- Callout: explain how the enrichment package is structured so the user message and the SOC escalation pull from the same data set. -->
+
+### Decision tree: auto-handle vs escalate
+
+<!-- Paste the conditional / switch action that branches on user response + signal. -->
+<!-- Callout: walk through the threshold tuning and how the auto-handle line was set. -->
+
+### Conditional Access response
+
+<!-- Paste the action that invokes the named Conditional Access policy. -->
+<!-- Callout: explain which named policy is invoked and how to scope it without over-rotating on weak signal. -->
+
+### Deployment
+
+The JSON imports directly into a Logic App via the Azure portal (Code view → paste). For repeatable deployment, the workflow can be wrapped in an ARM template using the `Microsoft.Logic/workflows` resource type, with the workflow definition passed as a parameter and connection references parameterized.
+
+> **Status:** ARM template wrapping has not been end-to-end validated yet. The Logic App JSON itself is a known-good export; declarative deployment via ARM is on the to-do list and will be added to the cookbook entry once tested.
