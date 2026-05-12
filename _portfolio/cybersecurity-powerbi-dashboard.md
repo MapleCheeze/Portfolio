@@ -10,7 +10,7 @@ sidebar:
   - title: "Domain"
     text: "Security Metrics & Reporting"
   - title: "Tools Used"
-    text: "Power BI, Microsoft Sentinel, Microsoft Defender, KnowBe4, Abnormal Security, SharePoint, M / Power Query"
+    text: "Power BI, Microsoft Sentinel, Microsoft Defender, KnowBe4, Abnormal Security, SharePoint"
   - title: "Skills Demonstrated"
     text: "Data modeling, KPI design, executive reporting, API integration, security program metrics"
 ---
@@ -57,17 +57,15 @@ These are the numbers leadership reads first. Each was chosen because it actuall
 
 ## Architecture
 
-Each security tool exposes data through APIs. Power BI connects to those APIs through M (Power Query) connectors, transforms the data, and refreshes on a weekly schedule.
+Each security tool exposes data through APIs. Power BI connects to those APIs, transforms the data, and refreshes on a weekly schedule.
 
 **Data sources connected:**
 
 - **Microsoft Sentinel**: the SIEM, pulled via Advanced Hunting API for incidents, alerts, and SIEM cost telemetry
 - **Microsoft Defender**: endpoint vulnerabilities and coverage via the Defender API
 - **Abnormal Security**: email threat protection telemetry
-- **KnowBe4**: phishing campaign results
+- **[KnowBe4](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/reporting/knowbe4-campaigns)**: phishing campaign results
 - **SharePoint**: the internal Risk Register list
-
-The Defender vulnerability connector uses a custom M-language query that authenticates via OAuth and pulls vulnerability data through the Advanced Hunting endpoint. That query is published in the [tech-cookbook repo](https://github.com/MapleCheeze/Tech-Cookbook/tree/main/reporting/cybersec-powerbi-dashboard) so it's reusable.
 
 ## Dashboard Views
 
