@@ -158,18 +158,8 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
       </a>
     </li>
     <li class="project-item">
-      <a href="{{ '/portfolio/sentinel-ingestion-transformation/' | relative_url }}">
-        <span class="project-number">02</span>
-        <div class="project-body">
-          <span class="project-title">Sentinel SIEM Ingestion Transformation</span>
-          <span class="project-blurb">Designed ingestion-time transformations in Microsoft Sentinel to normalize, enrich, and filter logs before they hit the workspace.</span>
-        </div>
-        <span class="project-arrow">→</span>
-      </a>
-    </li>
-    <li class="project-item">
       <a href="{{ '/portfolio/impossible-travel-workflow/' | relative_url }}">
-        <span class="project-number">03</span>
+        <span class="project-number">02</span>
         <div class="project-body">
           <span class="project-title">Impossible Travel Workflow</span>
           <span class="project-blurb">Built an end-to-end workflow to detect, triage, and respond to impossible travel alerts across identity and endpoint signals.</span>
@@ -179,7 +169,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
     </li>
     <li class="project-item">
       <a href="{{ '/portfolio/device-tagging-defender/' | relative_url }}">
-        <span class="project-number">04</span>
+        <span class="project-number">03</span>
         <div class="project-body">
           <span class="project-title">Device Tagging in Defender for Endpoint</span>
           <span class="project-blurb">Designed and automated a device tagging strategy in Defender for Endpoint to drive targeted policies, detections, and reporting.</span>
@@ -189,7 +179,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
     </li>
     <li class="project-item">
       <a href="{{ '/portfolio/defender-for-cloud-devops/' | relative_url }}">
-        <span class="project-number">05</span>
+        <span class="project-number">04</span>
         <div class="project-body">
           <span class="project-title">Defender for Cloud &amp; DevOps Governance</span>
           <span class="project-blurb">Leading the rollout of Microsoft Defender for Cloud and embedding governance directly into Azure DevOps pipelines, an ongoing program to make secure-by-default the path of least resistance.</span>
@@ -199,7 +189,7 @@ There's a rhythm to how disciplines connect too: security, privacy, automation, 
     </li>
     <li class="project-item">
       <a href="{{ '/portfolio/ngo-endpoint-security/' | relative_url }}">
-        <span class="project-number">06</span>
+        <span class="project-number">05</span>
         <div class="project-body">
           <span class="project-title">Endpoint Security for an International NGO</span>
           <span class="project-blurb">Security Advisor engagement through the CyberPeace Institute: designed BYOD architecture and authored a plain-language endpoint security guide for the remote workforce of an international NGO without in-house IT capacity.</span>
