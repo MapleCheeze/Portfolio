@@ -25,7 +25,7 @@ I joined as a Security Advisor through the CyberPeace Institute to work with the
 
 ## Approach
 
-The engagement was deliberately scoped to be sustainable for an organization without a security team. That meant favoring controls already built into platforms they were paying for, prioritizing user-driven actions over centrally-managed ones, and writing for non-technical readers without watering down the substance.
+The engagement was deliberately scoped to be sustainable for an organization without a security team. That meant controls built into platforms they were already paying for, and user-driven actions over anything that needed central management. The documentation had to read for non-technical staff without watering down the substance.
 
 Two parallel workstreams:
 

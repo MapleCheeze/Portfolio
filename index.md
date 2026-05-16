@@ -29,19 +29,19 @@ classes:
 
 ## About
 
-I've always been drawn to how things work. Not just the surface of it, but the logic underneath. Technology was never a career path I chose so much as a direction I kept moving in naturally. The more I pulled on it, the more was there.
+I've always been drawn to how things work. The logic underneath, not the surface. Technology was never a career path I chose so much as a direction I kept moving in naturally. The more I pulled on it, the more was there.
 
-That same pull shows up everywhere in my life. On a trail or a rock face, the interesting part isn't the destination. It's reading the terrain, making a call with incomplete information, and adjusting as you go. I've found that problems in technology, especially in security and privacy, reward exactly that kind of thinking. The willingness to step into something before you fully understand it, trust your foundation, and figure out the rest in motion.
+That same pull shows up on trails and rock faces. The destination isn't really the interesting part. What keeps me there is reading the terrain with incomplete information and adjusting as I move. Problems in security and privacy reward the same instinct. You step in before you've worked out the full shape of it and figure out the rest as you go.
 
 > "You can't use up creativity. The more you use, the more you have." - Maya Angelou
 
-That's how I've approached every problem I've worked on. Not treating knowledge as a fixed resource to be rationed, but as something that compounds the more you put it to use. I've built security programs from nothing, worked across tools and disciplines most practitioners treat as separate, and picked up privacy alongside security because the two problems were always the same problem viewed from different angles.
+That's how I've approached every problem I've worked on. Knowledge compounds the more I put it to use. I've built security programs from scratch and picked up privacy alongside security because the two were always the same problem viewed from different angles.
 
-I'm also just genuinely comfortable not knowing. Exploring a new route, a new technology, a new approach, means starting without a map. That doesn't unsettle me. It's usually where the most interesting work happens.
+I'm also genuinely comfortable not knowing. Starting without a map doesn't unsettle me. That's usually where the most interesting work happens.
 
 > "Everything in the universe has a rhythm, everything dances." - Maya Angelou
 
-There's a rhythm to how disciplines connect too: security, privacy, automation, architecture. I've spent my career at those intersections, building things that hold, advising where it matters, and staying curious enough to keep finding new terrain worth exploring.
+I've spent my career working where security and privacy meet the systems that carry them. The work that holds up tends to live in those seams.
 
 </section>
 

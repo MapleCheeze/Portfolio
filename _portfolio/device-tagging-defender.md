@@ -19,9 +19,9 @@ sidebar:
 
 ## Overview
 
-In Microsoft Defender for Endpoint, every device is just a name on a list until you tell the platform what it is. Without context, an analyst responding to an incident has to stop and figure out which department a device belongs to, who uses it, and how sensitive its data is, usually by chasing information across spreadsheets and directory tools. That lookup costs time at exactly the moment time matters most.
+In Microsoft Defender for Endpoint, every device is just a name on a list until you tell the platform what it is. Without context, an analyst responding to an incident has to stop and figure out which department a device belongs to and how sensitive its data is, usually by chasing information across spreadsheets and directory tools. That lookup costs time at exactly the moment time matters most.
 
-Device tagging is built into Defender, included at no extra cost, and almost universally underused. I designed an automated tagging system that pulls department data from Entra ID and applies it to devices on a schedule, so context is always present in Defender itself, no separate lookup required.
+Device tagging is built into Defender at no extra cost, and almost universally underused. I designed an automated tagging system that pulls department data from Entra ID and applies it to devices on a schedule, so context is always present in Defender itself with no separate lookup required.
 
 ## Goals
 
@@ -86,7 +86,7 @@ Tags map directly to Defender device groups, which scope analyst access. Finance
 Custom analytic rules in Sentinel filter on device tags, so high-sensitivity device groups can run stricter rules without spamming false positives across the rest of the fleet.
 
 ### Reporting & Compliance
-Vulnerability reports, incident dashboards, and audit evidence pivot on department tags. Instead of "40 devices have a critical vuln," reporting becomes "8 in Finance, 3 in HR", routable, accountable.
+Vulnerability reports and incident dashboards pivot on department tags. Instead of "40 devices have a critical vuln," reporting becomes "8 in Finance, 3 in HR." That's routable to a specific team lead.
 
 ## Outcomes
 

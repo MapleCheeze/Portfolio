@@ -27,8 +27,8 @@ The workflow triggers on a Microsoft Sentinel incident created from Microsoft De
 
 What this means in practice:
 
-- **The detection is Defender's, not Sentinel's.** Tuning the signal itself happens in the Defender alert policy, not in a Sentinel KQL rule. Sentinel is acting as the routing and orchestration layer.
-- **All triage logic lives in the Logic App.** Exclusion conditions, OOO handling, regional routing, manager fallback, incident closure: every branch is inside the workflow itself.
+- **The detection is Defender's.** Signal tuning happens in the Defender alert policy. Sentinel acts as the routing and orchestration layer.
+- **All triage logic lives in the Logic App.** Every branch sits inside the workflow itself, from exclusion conditions and OOO handling through regional routing, manager fallback, and incident closure.
 - **The first guard is a basic identity check.** If the account entity passed in by Sentinel can't be resolved to a valid user (empty `displayName` on the user profile), the workflow terminates immediately and writes a justification back to the incident. This prevents the rest of the enrichment from running against a stale or malformed reference.
 
 ## Workflow Diagram

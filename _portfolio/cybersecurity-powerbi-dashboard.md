@@ -21,14 +21,14 @@ Before this dashboard, the weekly security briefing was assembled by hand. Repor
 
 Worse, the whole process lived with one person. Miss the prep window because something urgent came up (which happens constantly in security), and leadership walked into the meeting with stale information or no information at all.
 
-I designed and built a single Power BI dashboard that pulls from every security tool in the program automatically, refreshes on a schedule, and gives leadership a meeting-ready view of security posture in under five minutes, no spreadsheets, no scavenger hunt, no single point of failure.
+I designed and built a single Power BI dashboard that connects to every security tool in the program and refreshes on a schedule. Leadership has a meeting-ready view of security posture in under five minutes, with no spreadsheets and no scavenger hunt.
 
 ## Goals
 
 - Replace the manual, weekly spreadsheet build with automated refresh
-- One pane that covers the full program, not just one tool's slice
+- One pane that covers the full program in one place
 - Make it understandable to non-technical leadership without translation
-- Surface the data that *should* be informing decisions, not just the data that's easy to export
+- Surface the data that *should* be informing decisions, even when it's harder to pull
 - Build it on tools the org already paid for
 
 ## The Six Pillars
