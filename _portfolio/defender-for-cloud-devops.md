@@ -59,12 +59,8 @@ Exceptions follow a defined approval path with time-bound review instead of livi
 
 ## Architecture Diagram
 
-![DevOps security pipeline architecture]({{ '/assets/images/portfolio/defender-cloud/devops-pipeline.svg' | relative_url }})
+![DevOps security pipeline architecture]({{ '/assets/images/portfolio/defender-cloud/devops-pipeline.svg' | relative_url }}){: .full}
 
 ## Where It Stands
 
-This is genuinely ongoing work, and the writeup will mature alongside it. Current focus is consistent posture management coverage and getting the first wave of policy-as-code patterns landed in DevOps. Future updates here will document what got built, what we changed mid-flight, and the outcomes.
-
-## Templates & Code
-
-Sanitized policy definitions, pipeline templates, and deployment patterns will be published in the [Tech-Cookbook repo](https://github.com/MapleCheeze/Tech-Cookbook) as they're cleared for sharing.
+This is genuinely ongoing work. The writeup will mature as the rollout does, but the artifacts themselves stay internal. I am not planning to publish the policy definitions, pipeline templates, or specific deployment patterns. What lives here is the thinking around how a program like this gets framed, and the trade-offs that come up along the way. If you are working on something similar and want to compare notes, the contact on the home page is the easiest way to reach me.
