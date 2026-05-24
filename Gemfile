@@ -2,7 +2,8 @@ source "https://rubygems.org"
 
 gem "minimal-mistakes-jekyll"
 
-# Pin sass-embedded below 1.100 — that release expects JSON::Fragment, which
-# was removed in json gem >= 2.10, causing native-extension build failures
-# on GitHub Pages runners. Re-evaluate once a fixed sass-embedded ships.
-gem "sass-embedded", "< 1.100"
+# Pin json below 2.10 — sass-embedded 1.100.0 references JSON::Fragment,
+# which was removed in json gem 2.10+. Pinning json keeps JSON::Fragment
+# available so sass-embedded's native extension builds. Targets the actual
+# root cause; works regardless of which sass-embedded version is resolved.
+gem "json", "< 2.10"
