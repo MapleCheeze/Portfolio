@@ -36,7 +36,7 @@ Two parallel workstreams:
 
 The architecture below shows the BYOD control flow: how personal devices accessing organizational systems were segmented, what was required of the device before access, and where the org's responsibility began and ended.
 
-![BYOD security architecture]({{ '/assets/images/portfolio/ngo-endpoint/byod-architecture.svg' | relative_url }}){: .full}
+![BYOD security architecture]({{ '/assets/images/portfolio/ngo-endpoint/byod-architecture.svg' | relative_url }})
 
 ## Deliverables
 

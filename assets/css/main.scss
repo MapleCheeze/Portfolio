@@ -835,3 +835,21 @@ body.layout--splash #main { padding-top: 0; }
     gap: 0.5rem;
   }
 }
+
+/* ===========================================================
+   Portfolio project-page image tuning
+   ----------------------------------------------------------
+   Targets architecture diagrams by filename so the markdown
+   stays clean. Currently set to full content width while we
+   evaluate the result. Adjust max-width here per-image as
+   needed once we see how each diagram lands visually.
+   =========================================================== */
+
+.page__content img[src*="devops-pipeline"],
+.page__content img[src*="byod-architecture"] {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2em 0;
+}
+}

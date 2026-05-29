@@ -59,7 +59,7 @@ Exceptions follow a defined approval path with time-bound review instead of livi
 
 ## Architecture Diagram
 
-![DevOps security pipeline architecture]({{ '/assets/images/portfolio/defender-cloud/devops-pipeline.svg' | relative_url }}){: .full}
+![DevOps security pipeline architecture]({{ '/assets/images/portfolio/defender-cloud/devops-pipeline.svg' | relative_url }})
 
 ## Where It Stands
 
