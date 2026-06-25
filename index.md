@@ -14,7 +14,7 @@ classes:
   </div>
   <div class="hero-photo">
     <div class="hero-photo-frame">
-      <img src="{{ '/assets/images/hero-photo.jpg' | relative_url }}" alt="Keshawn White" />
+      <img src="{{ '/assets/images/hero-photo.jpg' | relative_url }}" alt="Shawn White" />
       <span class="hero-photo-noise" aria-hidden="true"></span>
       <span class="hero-photo-scan" aria-hidden="true"></span>
     </div>
