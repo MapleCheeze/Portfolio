@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: "Keshawn White"
+title: "Shawn White"
 classes:
   - landing
   - dark-theme
@@ -9,7 +9,7 @@ classes:
 
 <section class="hero-section reveal-stagger">
   <div class="hero-content">
-    <h1 class="hero-name">Keshawn<br>White<span class="hero-period">.</span></h1>
+    <h1 class="hero-name">Shawn<br>White<span class="hero-period">.</span></h1>
     <p class="hero-tagline">// Security Architect &amp; Engineer<br>// AI Governance, Responsible AI &amp; Privacy by Design<br>// Strategy &amp; Automation<br>// Mentor &amp; Advisor</p>
   </div>
   <div class="hero-photo">
