@@ -206,7 +206,7 @@ I've spent my career working where security and privacy meet the systems that ca
   <p class="contact-tagline">Always down for something interesting.</p>
   <p class="contact-intro">If you're building something, starting something, or figuring something out, I'm genuinely open to hearing about it. I like being around people who are curious and doing things, whether that's a security conversation, a startup idea, a community worth building, or a project that doesn't have a clean category yet.</p>
   <ul class="contact-list">
-    <li><a href="mailto:keshawnwhite38@gmail.com">keshawnwhite38@gmail.com</a></li>
-    <li><a href="https://www.linkedin.com/in/keshawn-white/">linkedin.com/in/keshawn-white</a></li>
+    <li><a href="mailto:shawn.wh99@gmail.com">shawn.wh99@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/shawnwh/">linkedin.com/in/shawnwh</a></li>
   </ul>
 </section>
