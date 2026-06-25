@@ -1,4 +1,4 @@
-# Keshawn White - Personal Portfolio
+# Shawn White - Personal Portfolio
 
 Personal portfolio site built with Jekyll and the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme.
 
